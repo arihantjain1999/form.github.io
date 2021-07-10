@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right top, #034963 ,#2afaf3);
+            color: white;
+        }
+        .heading{
+            color: white;
+        }
+        .input{
+            margin-top: 2%;
+            outline: none;
+            text-align: center;
+            height: 20px;
+            border-radius: 2px;
+            border: none;
+            transition: all ease .5s;
+        }
+        .input:hover{
+            transform: scale(1.04);
+            box-shadow: 3px 3px 5px black;
+        }
+        form{
+            margin-top: 5%;
+        }
+        .width{
+            width: 345px;
+        }
+        .height{
+            height: 150px;
+        }
+        .submit{
+            color: aliceblue;
+            height: 30px;
+            background:transparent;
+            border:1px solid white;
+            width: 200px;
+            transition: all .5s ease;
+            border-radius: 5px ;
+        }
+        .submit:hover{
+            color :#034963;
+            background-color: white;
+            transform: scale(1.1);
+            box-shadow: 3px 3px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 class="heading">Contact Form</h1>
+    <span class="heading"> Please fill in your information and we we'll be sending your ordwe on time. </span>
+    <form action="#">
+        <label for="a" class="heading label">Your Name :</label>
+        <input class="input" type="text" name="name" id="a" placeholder="First Name">
+        <input  class="input" type="text" name="name" id="b" placeholder="Last Name">
+        <br>
+        <label for="a" class="heading label ">Your Email :</label>
+        <input type="text"  class="input width" name="name" id="c" placeholder="eg : email@gmail.com">
+        <br>
+        <label for="d" class="heading label">Number :  &nbsp; &nbsp;&nbsp;</label>
+        <input type="tel" pattern="[0-9]" name="number" class="input width" id="d" placeholder="999 999 9999">
+        <br>
+        <label class="label heading" for="e">Messege :</label>
+        <textarea name="messege"  class="input width height"  id="e" cols="30" rows="30"></textarea>
+        <br>
+        <label class="label heading" for="e">Gender :</label>
+        <label class="label heading" for="f">Male :</label>
+        <input type="radio" class="input" name="gender" id="f" value="Male" >
+        <label class="label heading" for="f">Female :</label>
+        <input type="radio" name="gender" class="input" id="g" value="Female" >
+        <br>
+        <span class="input heading">Vehicle type:</span>
+        <input type="checkbox" id="vehicle1" class="input he" name="vehicle1" value="Bike">
+
+        <label for="vehicle1"> I have a bike</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" class="input" value="Car">
+        <label for="vehicle2"> I have a car</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" class="input" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <hr>
+        <input class="submit" type="submit">
+    </center>
+    </form>
+    
+</body>
+</html>
